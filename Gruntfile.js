@@ -43,7 +43,7 @@ module.exports = function(grunt) {
             },
             combine : {
                 files: {
-                    'styles/global.min.css': ['styles/sass_to_css/*.css', 'styles/src_css/*.css']
+                    'styles/global.min.css': ['styles/src_css/*.css', 'styles/sass_to_css/*.css']
                 },
             },
         },
@@ -59,17 +59,17 @@ module.exports = function(grunt) {
                   quality: 30
                 },
                 {
-                  width: 700,
+                  width: 800,
                   name: 'md',
                   quality: 30
                 },
                 {
-                  width: 400,
+                  width: 500,
                   name: 'sm',
                   quality: 30
                 },
                 {
-                  width: 300,
+                  width: 350,
                   name: 'xs',
                   quality: 30
                 },

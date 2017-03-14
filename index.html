@@ -1,25 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personal Blog - Full Stack NanoDegree Project</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3" id="logo">
-          <picture>
-            <source srcset="https://" type="video/">
-          </picture>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Personal Blog - Full Stack NanoDegree Project</title>
+
+        <link rel="shortcut icon" type="imagex-icon" href="./imgs/crow.ico" />
+        <!-- css links -->
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/global.min.css">
+        <!-- js scripts -->
+        <script>
+            // Picture element HTML5 shiv
+            document.createElement( "picture" );
+        </script>
+        <script src="./js/picturefill.min.js" async></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- header -->
+            <header class="row" id="header">
+                <div class="col-sm-3 col-xs-4" id="logo">
+                    <picture>
+                        <source srcset="./imgs/crow_logo_black-sm.png" media="(min-width: 768px)">
+                        <source srcset="./imgs/crow_logo_black-xs.png" media="(max-width: 767px)">
+                        <img srcset="./imgs/crow_logo_black-sm.png"
+                             alt="Logo of a crow that says: Armaaar Creations"
+                             title="Logo of a crow that says: Armaaar Creations">
+                    </picture>
+                </div>
+                <div class="col-sm-9 col-xs-8 text-right text-uppercase" id="site-title">
+                    <h1 id="main-title">Ahmed Rafik</h1>
+                    <h3 id="sub-title">front-end ninja</h3>
+                </div>
+             </header>
+             <!-- Cover -->
+             <section class="row" id="cover">
+                 <div class="col-xs-12">
+                     <picture>
+                         <source srcset="./imgs/HTML5_sticker-lg.png" media="(min-width: 992px)">
+                         <source srcset="./imgs/HTML5_sticker-md.png" media="(min-width: 768px)">
+                         <source srcset="./imgs/HTML5_sticker-sm.png" media="(min-width: 351px)">
+                         <source srcset="./imgs/HTML5_sticker-xs.png" media="(max-width: 350px)">
+                         <img srcset="./imgs/HTML5_sticker-md.png"
+                              alt="Site Cover. Contains the HTML5 logo and says: I've seen the future, It's in my browser."
+                              title="Site Cover. Contains the HTML5 logo and says: I've seen the future, It's in my browser.">
+                     </picture>
+                 </div>
+            </section>
+            <!-- Articles -->
+            <section class="row" id="articles">
+                <div class="col-xs-12">
+                    <h2 class="section-title text-capitalize">Featured Work</h2>
+                </div>
+                <!-- Article -->
+                <article class="article text-center col-sm-4">
+                    <picture>
+                        <source srcset="./imgs/ittick-sm.png" media="(min-width: 351px)">
+                        <source srcset="./imgs/ittick-xs.png" media="(max-width: 350px)">
+                        <img srcset="./imgs/ittick-sm.png"
+                             alt="project picture"
+                             title="project picture">
+                    </picture>
+                    <h2 class="article-title text-uppercase">IT Tick</h2>
+                    <p class="article-description">
+                        <a href="http://www.it-tick.com/" target="_blank">http://www.it-tick.com/</a>
+                    </p>
+                </article>
+                <!-- Article -->
+                <article class="article text-center col-sm-4">
+                    <picture>
+                        <source srcset="./imgs/starkids-sm.png" media="(min-width: 351px)">
+                        <source srcset="./imgs/starkids-xs.png" media="(max-width: 350px)">
+                        <img srcset="./imgs/starkids-sm.png"
+                             alt="project picture"
+                             title="project picture">
+                    </picture>
+                    <h2 class="article-title text-uppercase">Starkids Academy</h2>
+                    <p class="article-description">
+                        <a href="http://starkids-academy.com/" target="_blank">http://starkids-academy.com/</a>
+                    </p>
+                </article>
+                <!-- Article -->
+                <article class="article text-center col-sm-4">
+                    <picture>
+                        <source srcset="./imgs/shisan-sm.png" media="(min-width: 351px)">
+                        <source srcset="./imgs/shisan-xs.png" media="(max-width: 350px)">
+                        <img srcset="./imgs/shisan-sm.png"
+                             alt="project picture"
+                             title="project picture">
+                    </picture>
+                    <h2 class="article-title text-uppercase">Shisan</h2>
+                    <p class="article-description">
+                        <a href="http://shisan-bot.com/" target="_blank">http://shisan-bot.com/</a>
+                    </p>
+                </article>
+            </section>
         </div>
-      </div>
-
-    </div>
-
-    <script type="text/javascript" src="./js/picturefill.min.js">
-
-    </script>
-  </body>
+    </body>
 </html>
